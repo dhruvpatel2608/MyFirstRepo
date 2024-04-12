@@ -14,7 +14,7 @@
 
 int main() {
 
-    FILE* textFile = fopen("myTextFile.txt", "w");
+    FILE* textFile = fopen("myTextFile.txt", "r");
 
     if (textFile == NULL) {
         fprintf(stderr, "Error opening file myTextFile.txt\n");
@@ -27,7 +27,7 @@ int main() {
 
     const unsigned short kBinaryData[] = { 26946, 24942, 31090, 25632, 29793, 8289, 28518, 8306, 28537, 33141, 39308 };
     // Declare and initialize a file pointer for binary file operations
-    FILE* binaryFile = fopen("myEvenDataList.data", "wb");
+    FILE* binaryFile = fopen("myEvenDataList.data", "rb");
 
     if (binaryFile == NULL) {
 
